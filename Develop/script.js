@@ -28,6 +28,8 @@ function generatePassword() {
 
   var lowerCaseConfirm = confirm("Do you want your password to include lower case letters?");
     if(lowerCaseConfirm === true){
+      var randomLetter = Math.floor(Math.random() * chars.length);
+      password += lowerCase.substring(randomLetter, randomLetter +1);
     }
 
    var upperCaseConfirm = confirm("Do you want your password to include upper case letters?");
