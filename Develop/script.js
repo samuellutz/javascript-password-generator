@@ -28,23 +28,21 @@ function generatePassword() {
 
   var lowerCaseConfirm = confirm("Do you want your password to include lower case letters?");
     if(lowerCaseConfirm === true){
-      for (i = 0; i < lowerCase.length; i++)
     }
 
    var upperCaseConfirm = confirm("Do you want your password to include upper case letters?");
-    if(upperCaseConfirm === true){
+    if(upperCaseConfirm === true){}
       for (i = 0; i < upperCase.length; i++)
-    }
+    
 
     var numberConfirm = confirm ("do you want to include numbers?");
-      if (numberConfirm === true){
+      if (numberConfirm === true){}
         for (i = 0; i < numbers.length; i++)
-      }
+      
 
     var SpecialCharacter = confirm("do you want to include special characters?")
-      if (SpecialCharacter === true){
+      if (SpecialCharacter === true){}
         for (i = 0; i < specialChar.length; i++)
-      }
-}
+  {}}
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
