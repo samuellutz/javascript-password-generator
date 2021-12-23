@@ -17,6 +17,7 @@ function writePassword() {
 
 function generatePassword() {
   var  password = ""
+  var result = ""
  console.log ("button click")
   var passLength = parseInt(prompt("please select character length between 8 and 128."));
 console.log(passLength)
@@ -51,19 +52,12 @@ console.log(upperCaseConfirm)
       var randomLetter = Math.floor(Math.random() * specialChar.length);
       password += specialChar[randomLetter];
     }
-  // var randomPassword = "";
-  // for (var i = 0; i <lengthConfirm; i++) {
-  //   password [
-  //     math.floor(math.random() * password.length)];
-  //     randomPassword += password[
-  //           math.floor(math.random() * password.length)
-  //       ];
-  // }
   for (i = 0; i < passLength; i++);{
-    console.log(i)
+   result += password.charAt(Math.floor(Math.random() * randomLetter));
+
   }
   console.log(i)
-   return password;
+   return result;
   }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
