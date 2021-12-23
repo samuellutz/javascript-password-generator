@@ -1,7 +1,7 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-var lowerCase = ("abcdefghijklmnopqrstuvwxyz");
-var upperCase = ("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+var lowerCase = ("abcdefghijklmnopqrstuvwxyz").split("");
+var upperCase = ("ABCDEFGHIJKLMNOPQRSTUVWXYZ").split("");
 var numbers = ("0123456789") .split("");
 var specialChar = ("!@#$%^&*") .split("");
 
@@ -51,16 +51,16 @@ console.log(upperCaseConfirm)
       var randomLetter = Math.floor(Math.random() * specialChar.length);
       password += specialChar[randomLetter];
     }
-  var randomPassword = "";
-  for (var i = 0; i <lengthConfirm; i++) {
-    password [
-      math.floor(math.random() * password.length)];
-      randomPassword += password[
-            math.floor(math.random() * password.length)
-        ];
-  }
+  // var randomPassword = "";
+  // for (var i = 0; i <lengthConfirm; i++) {
+  //   password [
+  //     math.floor(math.random() * password.length)];
+  //     randomPassword += password[
+  //           math.floor(math.random() * password.length)
+  //       ];
+  // }
 
-   return randomPassword;
+   return password;
   }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
