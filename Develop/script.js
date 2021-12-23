@@ -9,15 +9,17 @@ var specialChar = ("!@#$%^&*") .split();
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
+  console.log(password)
 
   passwordText.value = password;
 
 }
 
 function generatePassword() {
+  var  password = ""
  console.log ("button click")
   var passLength = parseInt(prompt("please select character length between 8 and 128."));
-
+console.log(passLength)
   var lengthConfirm = parseInt(passLength);
   console.log(lengthConfirm);
 
@@ -31,13 +33,14 @@ function generatePassword() {
     var randomLetter = Math.floor(Math.random() * lowerCase.length);
     password += lowerCase[randomLetter];
   }
-
+  console.log(password)
+console.log (lowerCaseConfirm)
    var upperCaseConfirm = confirm("Do you want your password to include upper case letters?");
    if(upperCaseConfirm){
     var randomLetter = Math.floor(Math.random() * upperCase.length);
     password += upperCase[randomLetter];
   }
-
+console.log(upperCaseConfirm)
     var numberConfirm = confirm ("do you want to include numbers?");
     if(numberConfirm){
       var randomLetter = Math.floor(Math.random() * numbers.length);
