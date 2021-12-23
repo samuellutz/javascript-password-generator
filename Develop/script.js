@@ -59,7 +59,10 @@ console.log(upperCaseConfirm)
   //           math.floor(math.random() * password.length)
   //       ];
   // }
-
+  for (i = 0; i < passLength; i++);{
+    console.log(i)
+  }
+  console.log(i)
    return password;
   }
 // Add event listener to generate button
