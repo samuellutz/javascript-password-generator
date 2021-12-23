@@ -1,7 +1,7 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-var lowerCase = ("abcdefghijklmnopqrstuvwxyz") .split("");
-var upperCase = ("ABCDEFGHIJKLMNOPQRSTUVWXYZ") .split("");
+var lowerCase = ("abcdefghijklmnopqrstuvwxyz");
+var upperCase = ("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
 var numbers = ("0123456789") .split("");
 var specialChar = ("!@#$%^&*") .split("");
 
@@ -29,29 +29,38 @@ console.log(passLength)
   }
 
   var lowerCaseConfirm = confirm("Do you want your password to include lower case letters?");
-  if(lowerCaseConfirm){
+  if(lowerCaseConfirm += true){
     var randomLetter = Math.floor(Math.random() * lowerCase.length);
     password += lowerCase[randomLetter];
   }
   console.log(password)
 console.log (lowerCaseConfirm)
    var upperCaseConfirm = confirm("Do you want your password to include upper case letters?");
-   if(upperCaseConfirm){
+   if(upperCaseConfirm += true){
     var randomLetter = Math.floor(Math.random() * upperCase.length);
     password += upperCase[randomLetter];
   }
 console.log(upperCaseConfirm)
     var numberConfirm = confirm ("do you want to include numbers?");
-    if(numberConfirm){
+    if(numberConfirm += true){
       var randomLetter = Math.floor(Math.random() * numbers.length);
       password += numbers[randomLetter];
     }
     var SpecialCharacter = confirm("do you want to include special characters?")
-    if(SpecialCharacter){
+    if(SpecialCharacter += true){
       var randomLetter = Math.floor(Math.random() * specialChar.length);
       password += specialChar[randomLetter];
     }
-   return password;
+  var randomPassword = "";
+  for (var i = 0; i <lengthConfirm; i++) {
+    password [
+      math.floor(math.random() * password.length)];
+      randomPassword += password[
+            math.floor(math.random() * password.length)
+        ];
+  }
+
+   return randomPassword;
   }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
