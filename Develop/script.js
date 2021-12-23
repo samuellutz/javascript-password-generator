@@ -40,7 +40,7 @@ function generatePassword() {
 
     var numberConfirm = confirm ("do you want to include numbers?");
     if(numberConfirm){
-      var randomNumber = Math.floor(Math.random() * numbers.length);
+      var randomLetter = Math.floor(Math.random() * numbers.length);
       password += numbers[randomLetter];
     }
     var SpecialCharacter = confirm("do you want to include special characters?")
