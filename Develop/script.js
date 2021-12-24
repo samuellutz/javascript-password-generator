@@ -30,31 +30,31 @@ console.log(passLength)
   }
 
   var lowerCaseConfirm = confirm("Do you want your password to include lower case letters?");
-  if(lowerCaseConfirm += true){
-    var randomLetter = Math.floor(Math.random() * lowerCase.length);
-    password += lowerCase[randomLetter];
+  if(lowerCaseConfirm === true){
+    for (var randomLetter = Math.floor(Math.random() * lowerCase.length);
+    password += lowerCase[randomLetter]);
   }
-  console.log(password)
-console.log (lowerCaseConfirm)
    var upperCaseConfirm = confirm("Do you want your password to include upper case letters?");
-   if(upperCaseConfirm += true){
-    var randomLetter = Math.floor(Math.random() * upperCase.length);
-    password += upperCase[randomLetter];
+   if(upperCaseConfirm === true){
+    for (var randomLetter = Math.floor(Math.random() * upperCase.length);
+    password += upperCase[randomLetter]);
   }
-console.log(upperCaseConfirm)
     var numberConfirm = confirm ("do you want to include numbers?");
-    if(numberConfirm += true){
-      var randomLetter = Math.floor(Math.random() * numbers.length);
-      password += numbers[randomLetter];
+    if(numberConfirm === true){
+     for (var randomLetter = Math.floor(Math.random() * numbers.length);
+      password += numbers[randomLetter]);
     }
     var SpecialCharacter = confirm("do you want to include special characters?")
-    if(SpecialCharacter += true){
-      var randomLetter = Math.floor(Math.random() * specialChar.length);
-      password += specialChar[randomLetter];
+    if(SpecialCharacter === true){
+      for (var randomLetter = Math.floor(Math.random() * specialChar.length);
+      password += specialChar[randomLetter]);
     }
-  for (i = 0; i < passLength; i++);{
-   result += password.charAt(Math.floor(Math.random() * randomLetter));
-
+  for (i = 0; i < lengthConfirm; i++);{
+   randomLetter[(Math.floor(Math.random() * passLength.length))];
+   result +=
+   randomLetter[
+       Math.floor(Math.random() * randomLetter.length)
+   ];
   }
   console.log(i)
    return result;
