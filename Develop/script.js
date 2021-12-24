@@ -31,23 +31,19 @@ console.log(passLength)
 
   var lowerCaseConfirm = confirm("Do you want your password to include lower case letters?");
   if(lowerCaseConfirm === true){
-    for (var randomLetter = Math.floor(Math.random() * lowerCase.length);
-    password += lowerCase[randomLetter]);
+    for (var 
   }
    var upperCaseConfirm = confirm("Do you want your password to include upper case letters?");
    if(upperCaseConfirm === true){
-    for (var randomLetter = Math.floor(Math.random() * upperCase.length);
-    password += upperCase[randomLetter]);
+    for (var 
   }
     var numberConfirm = confirm ("do you want to include numbers?");
     if(numberConfirm === true){
-     for (var randomLetter = Math.floor(Math.random() * numbers.length);
-      password += numbers[randomLetter]);
+     for (var 
     }
     var SpecialCharacter = confirm("do you want to include special characters?")
     if(SpecialCharacter === true){
-      for (var randomLetter = Math.floor(Math.random() * specialChar.length);
-      password += specialChar[randomLetter]);
+      for (var 
     }
   for (i = 0; i < lengthConfirm; i++);{
    randomLetter[(Math.floor(Math.random() * passLength.length))];
