@@ -16,11 +16,12 @@ function writePassword() {
 }
 
 function generatePassword() {
-  var  password = ""
-  var result = ""
+  var  passwordtotal = "";
+  var result = "";
  console.log ("button click")
   var passLength = parseInt(prompt("please select character length between 8 and 128."));
 console.log(passLength)
+
   var lengthConfirm = parseInt(passLength);
   console.log(lengthConfirm);
 
@@ -31,29 +32,38 @@ console.log(passLength)
 
   var lowerCaseConfirm = confirm("Do you want your password to include lower case letters?");
   if(lowerCaseConfirm === true){
-    for (var 
+    for (var i = 0; i < lowerCase.length; i++) {
+      passwordtotal.push(specialChar[i]);
+   }
   }
    var upperCaseConfirm = confirm("Do you want your password to include upper case letters?");
    if(upperCaseConfirm === true){
-    for (var 
-  }
+    for (var i = 0; i < upperCase.length; i++) {
+      passwordtotal.push(specialChar[i]);
+    }
+    }
     var numberConfirm = confirm ("do you want to include numbers?");
     if(numberConfirm === true){
-     for (var 
+     for (var i = 0; i < numbers.length; i++) {
+      passwordtotal.push(specialChar[i]);
     }
+   }
     var SpecialCharacter = confirm("do you want to include special characters?")
     if(SpecialCharacter === true){
-      for (var 
+      for (var i = 0; i < specialChar.length; i++) {
+        passwordtotal.push(specialChar[i]);
     }
-  for (i = 0; i < lengthConfirm; i++);{
-   randomLetter[(Math.floor(Math.random() * passLength.length))];
-   result +=
-   randomLetter[
-       Math.floor(Math.random() * randomLetter.length)
-   ];
-  }
+   }
+  for (i = 0; i < lengthConfirm; i++) {
+    passwordtotal[
+      Math.floor(Math.random() * passLength.length)];
+   passwordtotal +=
+      passwordtotal[
+        Math.floor(Math.random() * passLength.length)
+      ];
+    }
   console.log(i)
-   return result;
-  }
+   return passwordtotal;
+}
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
