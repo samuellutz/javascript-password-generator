@@ -57,13 +57,13 @@ console.log(passLength)
   for (i = 0; i < lengthConfirm; i++) {
     passwordtotal[
       Math.floor(Math.random() * passLength.length)];
-   passwordtotal +=
+   result +=
       passwordtotal[
         Math.floor(Math.random() * passLength.length)
       ];
     }
   console.log(i)
-   return passwordtotal;
-}
-// Add event listener to generate button
+   return result;
+  }
+// Ad event listener to generate button
 generateBtn.addEventListener("click", writePassword);
