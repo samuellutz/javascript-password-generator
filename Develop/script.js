@@ -99,3 +99,21 @@ function generatePassword() {
   else if (confirmUppercase) {
       choices = upperCase;
   };
+  var password = [];
+
+  // Start random selection variables:
+  // Random selection for all variables selected 
+  for (var i = 0; i < enter; i++) {
+      var pickChoices = choices[Math.floor(Math.random() * choices.length)];
+      password.push(pickChoices);
+  }
+  // This joins the password array and converts it to a string
+  
+  var ps = password.join("");
+
+  UserInput(ps);
+
+  return ps;
+}
+// Ad event listener to generate button
+generateBtn.addEventListener("click", writePassword);
