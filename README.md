@@ -14,6 +14,7 @@ it suppose to generate a random password with a serious of random letters, numbe
 
 ![image](https://user-images.githubusercontent.com/91674571/147386433-217fcf09-b738-406d-be48-6428fa478211.png)
 
+![random password](https://user-images.githubusercontent.com/91674571/147386492-b71aec03-2e33-45e3-9618-ab6412961154.gif)
 
 ## Authors
 
