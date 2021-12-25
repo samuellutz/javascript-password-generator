@@ -1,7 +1,6 @@
 # Random password
 
-its suppose to generate a random password but i failed to make it work properly. im turning in what i managed to finish and am hoping for constructive feedback that can help mme do better in the future.
-
+it suppose to generate a random password with a serious of random letters, numbers, and symbols based off of you selected peramiters.
 
 ## Built With
 
@@ -12,6 +11,7 @@ its suppose to generate a random password but i failed to make it work properly.
 ## Deployed Link
 
 * [See Live Site](#)
+
 
 
 ## Authors
