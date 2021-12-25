@@ -10,15 +10,16 @@ it suppose to generate a random password with a serious of random letters, numbe
 
 ## Deployed Link
 
-* [See Live Site](#)
+* [See Live Site](https://samuellutz.github.io/javascript-password-generator/)
 
+![image](https://user-images.githubusercontent.com/91674571/147386433-217fcf09-b738-406d-be48-6428fa478211.png)
 
 
 ## Authors
 
 * **Samuel Lutz** 
 
-- [Link to Portfolio Site](#)
+- [Link to Portfolio Site](https://samuellutz.github.io/samuels-portfolio/)
 - [Link to Github](https://github.com/samuellutz/javascript-password-generator)
 - [Link to LinkedIn](https://www.linkedin.com/in/samuel-lutz-77138020b/)
 
